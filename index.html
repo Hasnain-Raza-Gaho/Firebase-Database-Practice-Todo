@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+
+    <input type="text" name="" id="inp" placeholder="Enter Todo">
+    <button onclick="add_todo()">Add Todo</button>
+    <button onclick="delete_all_todo()">Delete All Todo</button>
+
+    <ul id="unorder">
+
+    </ul>
+    
+<script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-database-compat.js"></script>
+
+<script>
+     const firebaseConfig = {
+   apiKey: "AIzaSyDdlBR2ETxQCFPu6fllXhK18K7y9RoRJJ8",
+   authDomain: "fir-practice-451ef.firebaseapp.com",
+   projectId: "fir-practice-451ef",
+   storageBucket: "fir-practice-451ef.appspot.com",
+   messagingSenderId: "189683177155",
+   appId: "1:189683177155:web:f398cfec9b1fdd1f857476"
+ };
+
+
+ firebase.initializeApp(firebaseConfig);
+
+</script>
+    <script src="app.js"></script>
+</body>
+</html>
